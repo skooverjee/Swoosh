@@ -15,7 +15,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/welcome_background_descr" />
 
     <ImageView
         android:id="@+id/welcomeLogo"
@@ -27,7 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/welcomeBackground" />
+        app:layout_constraintTop_toTopOf="@+id/welcomeBackground"
+        android:contentDescription="@string/app_logo" />
 
     <TextView
         android:id="@+id/welcomeHeader"
@@ -35,10 +37,10 @@
         android:layout_height="62dp"
         android:layout_marginTop="84dp"
         android:fontFamily="@font/montserrat"
-        android:text="GO ALL IN"
+        android:text="@string/welcome_header"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="48dp"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +51,7 @@
         android:layout_width="250dp"
         android:layout_height="38dp"
         android:fontFamily="@font/montserrat"
-        android:text="ON GOING ALL OUT"
+        android:text="@string/welcome_subheader"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="24sp"
@@ -63,7 +65,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="48dp"
         android:singleLine="false"
-        android:text="Find a team in your city, and dominate the league!"
+        android:text="@string/welcome_description"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
         android:textColor="@android:color/white"
@@ -81,7 +83,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="Get started"
+        android:text="@string/get_started"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@+id/welcomeBackground"

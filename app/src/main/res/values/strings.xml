@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Swoosh</string>
+    <string name="desired_league">Desired League:</string>
+    <string name="welcome_header">GO ALL IN</string>
+    <string name="welcome_subheader">ON GOING ALL OUT</string>
+    <string name="welcome_description">Find a team in your city, and dominate the league!</string>
+    <string name="next">Next</string>
+    <string name="co_ed">Co-Ed</string>
+    <string name="womens">Women\'s</string>
+    <string name="mens">Men\'s</string>
+    <string name="get_started">Get started</string>
+    <string name="welcome_background_descr">background of welcome activity layout</string>
+    <string name="app_logo">swoosh application logo</string>
+    <string name="league_background_descr">background of league activity layout</string>
 </resources>
