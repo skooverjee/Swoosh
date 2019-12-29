@@ -4,31 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".controller.WelcomeActivity">
 
     <ImageView
         android:id="@+id/welcomeBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/welcome_background_descr"
         android:scaleType="centerCrop"
         android:src="@drawable/welcomescreenbg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/welcome_background_descr" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/welcomeLogo"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_logo"
         android:scaleType="fitCenter"
         android:src="@drawable/swooshlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/welcomeBackground"
-        android:contentDescription="@string/app_logo" />
+        app:layout_constraintTop_toTopOf="@+id/welcomeBackground" />
 
     <TextView
         android:id="@+id/welcomeHeader"
@@ -62,18 +62,18 @@
         android:layout_width="186dp"
         android:layout_height="40dp"
         android:layout_marginTop="48dp"
+        android:fontFamily="@font/montserrat"
         android:singleLine="false"
         android:text="@string/welcome_description"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        android:fontFamily="@font/montserrat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeSubheader" />
 
     <Button
-        android:id="@+id/finishButton"
+        android:id="@+id/getStartedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -84,6 +84,7 @@
         android:text="@string/get_started"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="@android:color/white"
+        android:onClick="onGetStartedClick"
         app:layout_constraintBottom_toBottomOf="@+id/welcomeBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
