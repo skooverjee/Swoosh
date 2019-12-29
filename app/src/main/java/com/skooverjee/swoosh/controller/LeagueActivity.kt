@@ -6,12 +6,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.skooverjee.swoosh.R
+import com.skooverjee.swoosh.model.Player
 import com.skooverjee.swoosh.utilities.*
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : AppCompatActivity() {
 
-    var league = ""
+    var player = Player("", "")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +23,7 @@ class LeagueActivity : AppCompatActivity() {
         womenButton.isChecked = false
         coEdButton.isChecked = false
 
-        league = if (menButton.isChecked) {
+        player.league = if (menButton.isChecked) {
             MEN
         } else { "" }
     }
@@ -31,7 +32,7 @@ class LeagueActivity : AppCompatActivity() {
         coEdButton.isChecked = false
         menButton.isChecked = false
 
-        league = if (womenButton.isChecked) {
+        player.league = if (womenButton.isChecked) {
             WOMEN
         } else { "" }
     }
@@ -40,15 +41,15 @@ class LeagueActivity : AppCompatActivity() {
         menButton.isChecked = false
         womenButton.isChecked = false
 
-        league = if (coEdButton.isChecked) {
+        player.league = if (coEdButton.isChecked) {
             COED
         } else { "" }
     }
 
     fun onLeagueNextClick(view: View) {
-        if (league != "") {
+        if (player.league != "") {
             val skillIntent = Intent(this, SkillActivity::class.java)
-            skillIntent.putExtra(EXTRA_LEAGUE, league)
+            skillIntent.putExtra(EXTRA_PLAYER, player)
 
             startActivity(skillIntent)
         } else {
