@@ -26,7 +26,6 @@
         android:scaleType="fitCenter"
         android:src="@drawable/swooshlogo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/welcomeBackground"
         android:contentDescription="@string/app_logo" />
@@ -42,7 +41,6 @@
         android:textColor="@android:color/white"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeLogo" />
 
@@ -61,7 +59,7 @@
 
     <TextView
         android:id="@+id/welcomeDescription"
-        android:layout_width="176dp"
+        android:layout_width="186dp"
         android:layout_height="40dp"
         android:layout_marginTop="48dp"
         android:singleLine="false"
@@ -70,12 +68,12 @@
         android:textAppearance="@android:style/TextAppearance.Material.Small"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeSubheader" />
 
     <Button
-        android:id="@+id/getStartedButton"
+        android:id="@+id/finishButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -88,7 +86,6 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@+id/welcomeBackground"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

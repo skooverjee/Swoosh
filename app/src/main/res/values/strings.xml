@@ -12,4 +12,9 @@
     <string name="welcome_background_descr">background of welcome activity layout</string>
     <string name="app_logo">swoosh application logo</string>
     <string name="league_background_descr">background of league activity layout</string>
+    <string name="skill_background_descr">background of skill activity layout</string>
+    <string name="skill_caption">I am a:</string>
+    <string name="beginner">Beginner</string>
+    <string name="baller">Baller</string>
+    <string name="finish">finish</string>
 </resources>

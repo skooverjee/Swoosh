@@ -11,7 +11,7 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        getStartedButton.setOnClickListener {
+        finishButton.setOnClickListener {
             val leagueIntent = Intent(this, LeagueActivity::class.java)
             startActivity(leagueIntent)
         }
