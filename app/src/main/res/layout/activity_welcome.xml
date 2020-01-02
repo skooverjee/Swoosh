@@ -32,7 +32,7 @@
 
     <TextView
         android:id="@+id/welcomeHeader"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="62dp"
         android:layout_marginTop="84dp"
         android:fontFamily="@font/montserrat"
@@ -46,7 +46,7 @@
 
     <TextView
         android:id="@+id/welcomeSubheader"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="38dp"
         android:fontFamily="@font/montserrat"
         android:text="@string/welcome_subheader"
@@ -59,9 +59,11 @@
 
     <TextView
         android:id="@+id/welcomeDescription"
-        android:layout_width="186dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="48dp"
+        android:layout_marginEnd="80dp"
         android:fontFamily="@font/montserrat"
         android:singleLine="false"
         android:text="@string/welcome_description"
